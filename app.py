@@ -12,7 +12,7 @@ svc = joblib.load('svm_model.pkl')
 clf = joblib.load('rf_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
-@app.route('/predict', methods=['POST'])
+@app.route("/predict", methods=['POST'])
 def predict():
     data = request.json
     try:
