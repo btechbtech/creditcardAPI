@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000", "https://card-guard-checker-react.lovable.app/"])
+CORS(app, origins=["https://card-guard-checker-react.lovable.app"])
 
 # Load models and scaler
 classifier = joblib.load('logistic_model.pkl')
